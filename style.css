@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+.nav{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    background-color: orangered;
+    justify-content: space-between
+}
+.Nav{
+    margin-top:3px ;
+    margin-right: 5px;
+}
+#Name{
+    font-family:'Bradley Hand','Times New Roman', Times, serif;
+}
+.button{
+    border: 0;
+    background-color: orangered;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: rgb(255, 189, 127);
+    box-shadow: inset;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    bottom: 2px;
+    width: 100vw;
+    background-color: orangered;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    font-family:Doto,'Times New Roman', Times, serif;
+}
