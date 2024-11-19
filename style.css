@@ -1,41 +1,103 @@
-*{
+* {
     margin: 0;
 }
-.nav{
+
+body {
+    background-color: rgb(115, 164, 255);
+}
+
+.nav {
     position: fixed;
     width: 100vw;
     display: flex;
-    background-color: orangered;
+    background-color: rgb(11, 55, 85);
     justify-content: space-between
 }
-.Nav{
-    margin-top:3px ;
+
+.nav-button {
+    margin-top: 3px;
     margin-right: 5px;
 }
-#Name{
-    font-family:'Bradley Hand','Times New Roman', Times, serif;
+
+#Name {
+    font-family: 'Bradley Hand', 'Times New Roman', Times, serif;
 }
-.button{
+
+.button {
     border: 0;
-    background-color: orangered;
+    background-color: rgb(11, 55, 85);
     border-radius: 5px;
 }
-.button:hover{
-    background-color: rgb(255, 189, 127);
+
+.button:hover {
+    background-color: rgb(19, 98, 151);
     box-shadow: inset;
 }
 
-
-footer{
-    display: flex;
-    justify-content: center;
-    position:absolute;
-    bottom: 2px;
+#video {
     width: 100vw;
-    background-color: orangered;
+    margin-top: 2.7vw;
 }
-#contact{
+
+#mad {
     display: flex;
     justify-content: center;
-    font-family:Doto,'Times New Roman', Times, serif;
+
+}
+
+s {
+    margin: 10px;
+    transition: ease-in-out 4s;
+}
+s:hover{
+    transform: rotate(5960deg);
+}
+ 
+snap-tabs {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  
+    & > section {
+      block-size: 100%;
+    }
+  
+    & > header {
+      flex-shrink: 0;
+      min-block-size: fit-content;
+    }
+  }
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: rgb(11, 55, 85);
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    font-family: Doto, 'Times New Roman', Times, serif;
+}
+
+.button1 {
+    border: 0;
+    background-color: rgb(11, 55, 85);
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: rgb(9, 98, 151);
+    box-shadow: inset;
 }
