@@ -11,7 +11,8 @@ body {
     width: 100vw;
     display: flex;
     background-color: rgb(11, 55, 85);
-    justify-content: space-between
+    justify-content: space-between;
+    z-index: 10;
 }
 
 .nav-button {
@@ -21,17 +22,20 @@ body {
 
 #Name {
     font-family: 'Bradley Hand', 'Times New Roman', Times, serif;
+    color: blueviolet;
 }
 
 .button {
     border: 0;
     background-color: rgb(11, 55, 85);
     border-radius: 5px;
+    color: blueviolet;
 }
 
 .button:hover {
     background-color: rgb(19, 98, 151);
     box-shadow: inset;
+    color: blueviolet;
 }
 
 #video {
@@ -53,27 +57,81 @@ s:hover{
     transform: rotate(5960deg);
 }
  
-snap-tabs {
+.tabs{
+    position: relative; 
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    justify-content: center;
+    gap: 5px;
+   }
+   .tab, .tab-title {
+    display: inline-block;
+   }
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    background:  rgb(115, 164, 255); 
+    padding: 5px 10px;
+    font-family:'Bradley Hand', 'Times New Roman', Times, serif;
+    border-bottom: none; 
+   }
+   .tab-content {
+    position: absolute; 
+    padding: 10px; 
+    left: 0; 
+    width: calc(100% - 20px); 
+    display: none; 
+   }
+   .tab :checked + .tab-title {
+    position: relative; 
+    background: rgb(65, 130, 250); 
+    top: 1px; 
+    z-index: 0; 
+   }
+   .tab :checked ~ .tab-content {
+    display: block; 
+   }
+   
+   .container {
     position: relative;
-  
-    & > section {
-      block-size: 100%;
-    }
-  
-    & > header {
-      flex-shrink: 0;
-      min-block-size: fit-content;
-    }
+    width: 50%;
   }
+  .image {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(115, 164, 255);
+    overflow: hidden;
+    width: 80%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  .img {
+    position:absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  hr{
+    border-color: rgb(92, 92, 241);
+  }
+  
+  
 
 
 
-
-
-
+#none{
+    width: 100vh;
+    height: 600px;
+}
 
 
 footer {
@@ -83,6 +141,7 @@ footer {
     bottom: 0px;
     width: 100vw;
     background-color: rgb(11, 55, 85);
+    z-index: 10;
 }
 
 #contact {
