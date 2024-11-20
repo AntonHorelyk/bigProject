@@ -8,7 +8,7 @@ body {
 
 .nav {
     position: fixed;
-    width: 100vw;
+    width: 110vw;
     display: flex;
     background-color: rgb(11, 55, 85);
     justify-content: space-between;
@@ -38,10 +38,16 @@ body {
     box-shadow: inset;
     color: blueviolet;
 }
-
+#videoText{
+    z-index: 2;
+  position: absolute;
+  margin-top:  5vw ;
+color: blueviolet;
+font-family:'Bradley Hand', 'Times New Roman', Times, serif; ;
+}
 #video {
     width: 100vw;
-    margin-top: 2.7vw;
+    margin-top: 0.2vw;
 }
 
 #mad {
@@ -66,7 +72,6 @@ s:hover {
     gap: 5px;
 }
 
-.tab,
 .tab-title {
     display: inline-block;
 }
@@ -103,40 +108,42 @@ s:hover {
 
 .container {
     position: relative;
-    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .image {
     display: block;
-    width: 80%;
+    width: 40%;
     height: auto;
 }
 
 .overlay {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 10%;
     right: 0;
     background-color: rgb(115, 164, 255);
     overflow: hidden;
-    width: 80%;
+    width: 65%;
     height: 0;
     transition: .5s ease;
 }
 
 .container:hover .overlay {
-    height: 100%;
+    height: 30%;
+    
 }
 
 .text {
     white-space: nowrap;
     color: rgb(207, 92, 92);
     font-family: 'Bradley Hand', 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
     overflow: hidden;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
