@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(115, 164, 255);
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(11, 55, 85);
+    justify-content: space-between;
+    z-index: 10;
+    margin-bottom: 5vh;
+}
+
+.nav-button {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+#Name {
+    font-family: 'Bradley Hand', 'Times New Roman', Times, serif;
+    color: blueviolet;
+}
+
+.button {
+    border: 0;
+    background-color: rgb(11, 55, 85);
+    border-radius: 5px;
+    color: blueviolet;
+}
+
+.button:hover {
+    background-color: rgb(19, 98, 151);
+    box-shadow: inset;
+    color: blueviolet;
+}
+main{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1vw 50vw 25vw 10vw;
+    grid-template-rows: 3vh 40vw  40vw 5vw 15vh ;
+}
+
+.div1{
+    size: relative;
+ grid-column: 2/3;
+ grid-row: 2/3;
+}
+#photo1{
+width:50vw;
+height: 40vw;
+}
+.div2{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    width: auto;
+}
+#photo2{
+width: 50vw;
+height: 45vw;
+
+}
+.div3{
+grid-column: 3/4;
+grid-row: 2/4;
+
+}
+.div4{
+grid-column: 4/5;
+grid-row: 2/4;
+
+}
+
+#icon{
+    width: 70px;
+    height: 70px;
+    transition: ease-in-out 3s;
+}
+#icon:hover{
+    transform: rotate(6300deg);
+}
+
+.div5{
+ grid-row: 4/5;
+ grid-column: 3/4;
+}
+.div6{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    background-color: rgb(11, 55, 85);
+    z-index: 10;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    font-family: Doto, 'Times New Roman', Times, serif;
+}
+
+.button1 {
+    border: 0;
+    background-color: rgb(11, 55, 85);
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: rgb(9, 98, 151);
+    box-shadow: inset;
+}
