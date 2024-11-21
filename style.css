@@ -42,7 +42,7 @@ body {
 #videoText{
     z-index: 2;
   position: absolute;
-  margin-top:  5% ;
+  margin-top:  5vh ;
 color: rgb(115, 164, 255);
 font-family:'Bradley Hand', 'Times New Roman', Times, serif; ;
 }
