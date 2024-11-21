@@ -8,7 +8,7 @@ body {
 
 .nav {
     position: fixed;
-    width: 110vw;
+    width: 100vw;
     display: flex;
     background-color: rgb(11, 55, 85);
     justify-content: space-between;
@@ -41,13 +41,13 @@ body {
 #videoText{
     z-index: 2;
   position: absolute;
-  margin-top:  5vw ;
+  margin-top:  7vw ;
 color: blueviolet;
 font-family:'Bradley Hand', 'Times New Roman', Times, serif; ;
 }
 #video {
     width: 100vw;
-    margin-top: 0.2vw;
+    margin-top: 1.5vw;
 }
 
 #mad {
@@ -139,7 +139,7 @@ s:hover {
     white-space: nowrap;
     color: rgb(207, 92, 92);
     font-family: 'Bradley Hand', 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     overflow: hidden;
     top: 50%;

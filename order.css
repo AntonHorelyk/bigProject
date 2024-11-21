@@ -8,7 +8,7 @@ body {
 
 .nav {
     position: fixed;
-    width: 110vw;
+    width: 100vw;
     display: flex;
     background-color: rgb(11, 55, 85);
     justify-content: space-between;
@@ -82,6 +82,7 @@ label{
 }
 .subb{
     font-family:'Bradley Hand', 'Times New Roman', Times, serif;
+    border-color: rgb(66, 0, 128);
 }
 
 input {
