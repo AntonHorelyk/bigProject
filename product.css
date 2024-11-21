@@ -4,6 +4,7 @@
 
 body {
     background-color: rgb(115, 164, 255);
+    padding-bottom: 50px;
 }
 
 .nav {
@@ -53,6 +54,7 @@ main{
 #photo1{
 width:40vw;
 height: 40vw;
+border-radius: 15px;
 }
 .div2{
     grid-column: 2/3;
@@ -62,6 +64,7 @@ height: 40vw;
 #photo2{
 width: 40vw;
 height: 40vw;
+border-radius: 15px;
 
 }
 .div3{
