@@ -47,14 +47,17 @@ color: rgb(115, 164, 255);
 font-family:'Bradley Hand', 'Times New Roman', Times, serif; ;
 }
 #video {
-    width: 100vw;
+    width: 100%;
     margin-top: 1.5vw;
 }
 
 #mad {
     display: flex;
     justify-content: center;
-
+transition: ease-in-out 2s;
+}
+#mad:hover{
+    transform: scale(2);
 }
 
 s {
